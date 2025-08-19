@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Property Cards</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fafafa;
+      padding: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .image {
+      background: #ddd;
+      height: 150px;
+      position: relative;
+    }
+    .image::after {
+      content: "→";
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #fff;
+      border-radius: 50%;
+      padding: 5px 9px;
+      font-weight: bold;
+      font-size: 14px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+    .content {
+      padding: 15px;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    .tag {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .tag .dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: red;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+    .info {
+      font-size: 13px;
+      color: #444;
+      margin-bottom: 8px;
+    }
+    .info span {
+      margin-right: 12px;
+    }
+    .location {
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 4px;
+    }
+    .date {
+      font-size: 11px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <div class="card">
+      <div class="image"></div>
+      <div class="content">
+        <div class="price">PKR 2.5Lac</div>
+        <div class="tag"><span class="dot"></span> Lower Portion</div>
+        <div class="info">
+          <span>🛏 6</span>
+          <span>🛁 4</span>
+          <span>📏 400 Sqyd</span>
+        </div>
+        <div class="location">FB Area Block 13, Karachi</div>
+        <div class="date">Added 1 month ago</div>
+      </div>
+    </div>
+
+    <!-- Copy this .card block for more items -->
+       <div class="grid">
+    <div class="card">
+      <div class="image"></div>
+      <div class="content">
+        <div class="price">PKR 2.5Lac</div>
+        <div class="tag"><span class="dot"></span> Lower Portion</div>
+        <div class="info">
+          <span>🛏 6</span>
+          <span>🛁 4</span>
+          <span>📏 400 Sqyd</span>
+        </div>
+        <div class="location">FB Area Block 13, Karachi</div>
+        <div class="date">Added 1 month ago</div>
+      </div>
+    </div>
+
+    
+  </div>
+
+</body>
+</html>
